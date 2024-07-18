@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area and Volume Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            transition: background-color 0.3s ease;
+        }
+        header a:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .shape {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 250px;
+        }
+        .shape:hover {
+            transform: translateY(-5px);
+        }
+        .shape h2 {
+            margin-top: 0;
+        }
+        .shape p {
+            margin-bottom: 15px;
+        }
+        .shape img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Area and Volume Calculator</h1>
+        <p class="intro">Our calculator helps you effortlessly find the area and volume of various geometric shapes.</p>
+        <a href="FindingTheAreaOfElement.html" class="calculate-btn">Calculate Area</a>
+    </header>
+    <div class="container">
+        <div class="shape" id="circle">
+            <img src="img/circle.jpg" alt="Circle">
+            <h2>Circle</h2>
+            <p>A circle is a shape with all points the same distance from its center. Circles are used in many real-world applications, such as wheels, clock faces, and circular structures in architecture.</p>
+            <p>Finding the area of a circle is essential for determining the amount of material needed to cover its surface, such as paint or fabric.</p>
+        </div>
+            <div class="shape" id="square">
+                <img src="img/square.jpg" alt="Square">
+                <h2>Square</h2>
+                <p>A square is a quadrilateral with four equal sides and four right angles. It is commonly found in geometry problems and real-world applications such as floor tiles, windows, and picture frames.</p>
+                <p>Calculating the area of a square is important for determining surface area, as well as for estimating material quantities needed for construction or design projects.</p>
+            </div>
+            <div class="shape" id="rectangle">
+                <img src="img/rectangle.jpg" alt="Rectangle">
+                <h2>Rectangle</h2>
+                <p>A rectangle is a parallelogram with four right angles. It has opposite sides equal and parallel. Rectangles are widely used in construction, architecture, and everyday objects like doors, windows, and books.</p>
+                <p>Measuring the area of a rectangle is crucial for determining the amount of space it occupies. This information is essential in various fields such as engineering, architecture, and interior design.</p>
+            </div>
+            <div class="shape" id="sphere">
+                <img src="img/sphere.jpg" alt="Sphere">
+                <h2>Sphere</h2>
+                <p>A sphere is a three-dimensional shape that is perfectly round in shape, like a ball. Spheres are prevalent in nature and are used in various man-made structures and objects, such as sports balls, globes, and water droplets.</p>
+                <p>Calculating the volume of a sphere is important in fields like physics, engineering, and manufacturing. It helps determine capacities of containers, buoyancy of objects, and material requirements for spherical objects.</p>
+            </div>
+            <div class="shape" id="cylinder">
+                <img src="img/cylinder.png" alt="Cylinder">
+                <h2>Cylinder</h2>
+                <p>A cylinder is a three-dimensional shape with two parallel circular bases connected by a curved surface. Cylinders are commonly found in everyday objects such as cans, tubes, and pipes.</p>
+                <p>Finding the volume of a cylinder is essential in various industries including manufacturing, engineering, and construction. It helps in determining capacities of containers, fluid flow rates, and material quantities required for cylindrical objects.</p>
+            </div>
+            <div class="shape" id="cone">
+                <img src="img/circle.jpg" alt="Cone">
+                <h2>Cone</h2>
+                <p>A cone is a three-dimensional shape with a circular base and a pointed apex. Cones are found in natural formations like mountains and volcanoes, as well as in man-made objects such as traffic cones and ice cream cones.</p>
+                <p>Calculating the volume of a cone is important in various applications including construction, manufacturing, and geometry. It helps in determining capacities of containers, material quantities required for conical structures, and fluid flow rates in engineering systems.</p>
+            </div>
+        </div>
+    </body>
+    </html>

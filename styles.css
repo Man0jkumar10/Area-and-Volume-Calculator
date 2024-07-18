@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.shape {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+}
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.shape img {
+    max-width: 100%;
+    max-height: 100px;
+    margin-bottom: 10px;
+}

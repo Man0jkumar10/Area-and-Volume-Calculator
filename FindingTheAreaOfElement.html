@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area and Volume Calculator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Area and Volume Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="shape" id="circle">
+            <img src="img/circle.jpg" alt="Circle">
+            <h2>Circle</h2>
+            <div class="input-group">
+                <label for="radius">Radius (mm):</label>
+                <input type="number" id="radius" placeholder="Enter radius">
+            </div>
+            <button onclick="calculateCircleArea()">Calculate Area</button>
+            <p id="circleArea" class="result">Area: 0</p>
+        </div>
+        <div class="shape" id="square">
+            <img src="img/square.jpg" alt="Square">
+            <h2>Square</h2>
+            <div class="input-group">
+                <label for="side">Side (mm):</label>
+                <input type="number" id="side" placeholder="Enter side length">
+            </div>
+            <button onclick="calculateSquareArea()">Calculate Area</button>
+            <p id="squareArea" class="result">Area: 0</p>
+        </div>
+        <div class="shape" id="rectangle">
+            <img src="img/rectangle.jpg" alt="Rectangle">
+            <h2>Rectangle</h2>
+            <div class="input-group">
+                <label for="length">Length (mm):</label>
+                <input type="number" id="length" placeholder="Enter length">
+            </div>
+            <div class="input-group">
+                <label for="width">Width (mm):</label>
+                <input type="number" id="width" placeholder="Enter width">
+            </div>
+            <button onclick="calculateRectangleArea()">Calculate Area</button>
+            <p id="rectangleArea" class="result">Area: 0</p>
+        </div>
+        <div class="shape" id="sphere">
+            <img src="img/sphere.jpg" alt="Sphere">
+            <h2>Sphere</h2>
+            <div class="input-group">
+                <label for="radiusSphere">Radius (mm):</label>
+                <input type="number" id="radiusSphere" placeholder="Enter radius">
+            </div>
+            <button onclick="calculateSphereVolume()">Calculate Volume</button>
+            <p id="sphereVolume" class="result">Volume: 0</p>
+        </div>
+        <div class="shape" id="cylinder">
+            <img src="img/cylinder.png" alt="Cylinder">
+            <h2>Cylinder</h2>
+            <div class="input-group">
+                <label for="radiusCylinder">Radius (mm):</label>
+                <input type="number" id="radiusCylinder" placeholder="Enter radius">
+            </div>
+            <div class="input-group">
+                <label for="height">Height (mm):</label>
+                <input type="number" id="height" placeholder="Enter height">
+            </div>
+            <button onclick="calculateCylinderVolume()">Calculate Volume</button>
+            <p id="cylinderVolume" class="result">Volume: 0</p>
+        </div>
+        <div class="shape" id="cone">
+            <img src="img/cone.jpeg" alt="Cone">
+            <h2>Cone</h2>
+            <div class="input-group">
+                <label for="radiusCone">Radius (mm):</label>
+                <input type="number" id="radiusCone" placeholder="Enter radius">
+            </div>
+            <div class="input-group">
+                <label for="heightCone">Height (mm):</label>
+                <input type="number" id="heightCone" placeholder="Enter height">
+            </div>
+            <button onclick="calculateConeVolume()">Calculate Volume</button>
+            <p id="coneVolume" class="result">Volume: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
